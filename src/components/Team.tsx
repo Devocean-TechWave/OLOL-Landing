@@ -113,7 +113,7 @@ const teamList: TeamProps[] = [
     imageUrl: jung,
     name: "염정",
     position: "Backend Developer & AI/Data Engineer",
-    description: "AI와 데이터 엔지니어링에 관심이 많은 백엔드 개발자입니다.",
+    description: "데이터에 관심이 많은 백엔드 개발자입니다.",
     socialNetworks: [
       {
         name: "Linkedin",

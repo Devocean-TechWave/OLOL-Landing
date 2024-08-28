@@ -38,7 +38,7 @@ export const Newsletter = () => {
       const result = await response.text();
 
       if (response.ok) {
-        setMessage(`예약되었습니다: ${result}`);
+        setMessage(`사전 예약되었습니다`);
       } else {
         switch (response.status) {
           case 400:

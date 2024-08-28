@@ -54,7 +54,9 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <img src={olol} alt="Olol Logo" className="h-8 w-auto mr-2" /> 
+              <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               올랑올랑
+              </span>
             </a>
           </NavigationMenuItem>
 

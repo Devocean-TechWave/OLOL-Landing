@@ -55,31 +55,25 @@ const notifications = [
   }
 ];
 
-const NotificationItem = ({ notification} : any) => {
+const NotificationItem = ({ notification }:any) => {
   const { avatar, name, message, time, icon, type } = notification;
 
   const itemClass =
     type === "highlight"
-      ? "border border-green-400 bg-white"
-      : "bg-gray-100";
+      ? "border border-green-400 bg-white dark:bg-gray-800 dark:border-green-600" // For highlighted items
+      : "bg-gray-100 dark:bg-gray-700"; // For default items
 
   return (
-    <div
-      className={`flex items-center p-3 mb-2 rounded-lg ${itemClass} shadow-sm`}
-    >
-      <img
-        src={avatar}
-        alt="User Avatar"
-        className="h-8 w-8 rounded-full mr-3" // 더 작은 프로필 이미지 크기
-      />
+    <div className={`flex items-center p-3 mb-2 rounded-lg ${itemClass} shadow-sm`}>
+      <img src={avatar} alt="User Avatar" className="h-8 w-8 rounded-full mr-3" />
       <div className="flex-1">
         <div className="flex items-center justify-between">
-          <p className="font-medium text-sm">{name}</p>
-          <p className="text-xs text-gray-500">{time}</p>
+          <p className="font-medium text-sm dark:text-white">{name}</p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">{time}</p>
         </div>
         <div className="flex items-center">
-          <img src={icon} alt="Notification Icon" className="h-4 w-4 mr-2" /> {/* 아이콘 이미지 사용 */}
-          <p className="text-sm">{message}</p>
+          <img src={icon} alt="Notification Icon" className="h-4 w-4 mr-2" />
+          <p className="text-sm dark:text-gray-300">{message}</p>
         </div>
       </div>
     </div>
@@ -88,13 +82,10 @@ const NotificationItem = ({ notification} : any) => {
 
 const NotificationList = () => {
   return (
-    <div className="p-4 max-w-md mx-auto bg-white rounded-lg shadow-md">
-      <h1 className="text-xl font-bold mb-4">알림</h1>
+    <div className="p-4 max-w-md mx-auto bg-white dark:bg-gray-900 rounded-lg shadow-md">
+      <h1 className="text-xl font-bold mb-4 dark:text-white">알림</h1>
       {notifications.map((notification) => (
-        <NotificationItem
-          key={notification.id}
-          notification={notification}
-        />
+        <NotificationItem key={notification.id} notification={notification} />
       ))}
     </div>
   );

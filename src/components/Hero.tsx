@@ -9,7 +9,7 @@ export const Hero = () => {
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
-            <span className="inline bg-gradient-to-tl from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
+          <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               올랑올랑
             </span>{" "}
             랜딩 페이지
