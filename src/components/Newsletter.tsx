@@ -36,7 +36,7 @@ export const Newsletter = () => {
       });
 
       const result = await response.text();
-
+      console.log(result);
       if (response.ok) {
         setMessage(`사전 예약되었습니다`);
       } else {
