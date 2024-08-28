@@ -34,15 +34,15 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/seyeon-jang-a4955817b/",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: " https://www.instagram.com/seye0n.bliss",
       },
       {
         name: "GitHubLogoIcon",
-        url: "https://www.instagram.com/",
+        url: "https://github.com/SeyeonJang",
       }
     ],
   },
@@ -72,34 +72,34 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/dev-yubin/",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/yub1n_i/",
       },
       {
         name: "GitHubLogoIcon",
-        url: "https://www.instagram.com/",
+        url: "https://github.com/devyubin",
       }
     ],
   },
   {
     imageUrl: joungeun,
     name: "신중은",
-    position: "FrontEnd & Backend Developer",
+    position: "Backend Developer",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/hawardshin/",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/sj.eun/",
       },
       {
         name: "GitHubLogoIcon",
-        url: "https://www.instagram.com/",
+        url: "https://github.com/Hawardshin",
       }
     ],
   },
@@ -110,15 +110,11 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.instagram.com/y.juuungi",
       },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        name: "GitHubLogoIcon",
-        url: "https://www.instagram.com/",
+        url: "https://github.com/jungddddd",
       }
     ],
   },
