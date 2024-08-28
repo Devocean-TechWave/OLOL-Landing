@@ -1,21 +1,14 @@
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
-import { Badge } from "./ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-  CardFooter,
 } from "@/components/ui/card";
-import { Check, Linkedin } from "lucide-react";
 // import { LightBulbIcon } from "./Icons";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Progress } from "@/components/ui/progress"
 import cat from "@/assets/cat.svg";
-import mission from "@/assets/mission.png";
 import missionStamp from "@/assets/missionStamp.png";
 import MissionCard from "./\bMissionCard";
 import NotificationList from "./\bNotificationList";

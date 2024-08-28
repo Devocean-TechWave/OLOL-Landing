@@ -10,12 +10,12 @@ export const Newsletter = () => {
   const [error, setError] = useState("");
 
   // 이메일 유효성 검사 함수
-  const isValidEmail = (email) => {
+  const isValidEmail = (email :any) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e : any) => {
     e.preventDefault();
 
     // 이메일 유효성 검사

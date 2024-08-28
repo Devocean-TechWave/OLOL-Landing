@@ -1,4 +1,4 @@
-import React from "react";
+
 import seoyeon from "@/assets/seoyeon.png";
 import jung from "@/assets/jung.png";
 import youjin from "@/assets/youjin.png";
@@ -7,7 +7,6 @@ import joungeun from "@/assets/joungeun.png";
 import pokeIcon from "@/assets/pokeIcon.png";  // 아이콘 이미지 경로 예시
 import fireIcon from "@/assets/fireIcon.png";
 import bookIcon from "@/assets/bookIcon.png";
-import { icons } from "lucide-react";
 
 const notifications = [
   {
@@ -56,7 +55,7 @@ const notifications = [
   }
 ];
 
-const NotificationItem = ({ notification }) => {
+const NotificationItem = ({ notification} : any) => {
   const { avatar, name, message, time, icon, type } = notification;
 
   const itemClass =

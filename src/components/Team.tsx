@@ -137,7 +137,7 @@ export const Team = () => {
       case "Instagram":
         return <Instagram size="20" />;
       case "GitHubLogoIcon":
-        return <GitHubLogoIcon size="20" />;
+        return <GitHubLogoIcon/>;
       default:
         return null;
     }
