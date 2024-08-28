@@ -7,9 +7,24 @@ const API_URL = import.meta.env.VITE_API_URL; // .env 파일에 VITE_API_URL 설
 export const Newsletter = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+
+  // 이메일 유효성 검사 함수
+  const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // 이메일 유효성 검사
+    if (!isValidEmail(email)) {
+      setError("올바른 이메일 형식을 입력해주세요.");
+      return;
+    }
+
+    setError(""); // 유효한 이메일이므로 에러 메시지 초기화
 
     try {
       const response = await fetch(`${API_URL}/api/emails/subscribe`, {
@@ -70,7 +85,8 @@ export const Newsletter = () => {
           />
           <Button type="submit">Subscribe</Button>
         </form>
-        {message && <p className="text-center mt-4">{message}</p>}
+        {error && <p className="text-red-500 text-center mt-2">{error}</p>} {/* 이메일 형식 오류 메시지 */}
+        {message && <p className="text-center mt-4">{message}</p>} {/* 서버 응답 메시지 */}
       </div>
 
       <hr className="w-11/12 mx-auto" />
