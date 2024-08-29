@@ -57,7 +57,7 @@ const teamList: TeamProps[] = [
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "www.linkedin.com/in/pujin021",
+        url: "https://www.linkedin.com/in/pujin021",
       },
       {
         name: "Instagram",
@@ -116,11 +116,11 @@ const teamList: TeamProps[] = [
     description: "데이터에 관심이 많은 백엔드 개발자입니다.",
     socialNetworks: [
       {
-        name: "Linkedin",
+        name: "Instagram",
         url: "https://www.instagram.com/y.juuungi",
       },
       {
-        name: "Instagram",
+        name: "GitHubLogoIcon",
         url: "https://github.com/jungddddd",
       }
     ],
